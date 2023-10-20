@@ -13,7 +13,7 @@ search.addEventListener('click', ()=>{
     
     const serverUrl = 'http://api.openweathermap.org/data/2.5/weather';
     const cityName = inp.value;
-    const apiKey = '3ecbf20065d6c89ca540e7c2012eecc2'; // этот ключ имеет ограничение в кол-ве запросов, если будут ошибки - придется сгенерировать новый или спросить в чате
+    const apiKey = 'bead7c080f6cdbd0e527a2e6825bc046'; 
     const url = `${serverUrl}?q=${cityName}&appid=${apiKey}`;
 
     addedLocation.push(inp.value);
