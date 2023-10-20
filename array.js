@@ -19,7 +19,7 @@ let elements = [];
 search.addEventListener('click', ()=>{
     const serverUrl = 'http://api.openweathermap.org/data/2.5/forecast';
     const cityName = inp.value;
-    const apiKey = 'bead7c080f6cdbd0e527a2e6825bc046'; // этот ключ имеет ограничение в кол-ве запросов, если будут ошибки - придется сгенерировать новый или спросить в чате
+    const apiKey = 'bead7c080f6cdbd0e527a2e6825bc046';
     const url = `${serverUrl}?q=${cityName}&appid=${apiKey}`;
     fetch(url)
         .then(response => { //Обработка ошибки 404
